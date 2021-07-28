@@ -1,0 +1,28 @@
+.nav {
+    border-bottom-left-radius: 10px;
+    grid-area: nav;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      202deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(249, 94, 134, 1) 0%,
+      rgba(104, 244, 255, 1) 100%
+    );
+    font-size: 25px;
+  }
+  .nav a {
+    margin: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.5s;
+  }
+  .nav a:hover {
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+  }
+
+  .nav.active{
+      color: gold;
+      background: none;
+  }
