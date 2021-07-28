@@ -1,4 +1,5 @@
 import React from "react";
+import MyPosts from "./MyPosts/MyPosts";
 import styles from './Profile.module.css'
 
 const Profile = () => {
@@ -10,15 +11,7 @@ const Profile = () => {
       <div>
         <img className={styles.avatar} src="avatar.jpg" alt="" srcset="" />
       </div>
-      <div>
-        My Posts
-        <div>New Post</div>
-        <div className='posts'>
-          Posts
-          <div className={styles.item}>Post1</div>
-          <div className='item'>Post2</div>
-        </div>
-      </div>
+      <MyPosts/>
     </div>
   );
 };
