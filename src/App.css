@@ -9,3 +9,14 @@
   grid-template-columns: 2fr 10fr;
   /* grid-gap: 10px; */
 }
+.app-wrapper-content {
+  border-bottom-right-radius: 10px;
+  grid-area: content;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+          278deg,
+          rgba(2, 0, 36, 1) 0%,
+          rgba(218, 245, 255, 1) 0%,
+          rgba(255, 255, 255, 1) 100%
+  );
+}
