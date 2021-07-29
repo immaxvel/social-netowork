@@ -9,8 +9,19 @@
             rgba(104, 244, 255, 1) 100%
     );
     font-size: 25px;
-}
 
+}
+.menu{
+    margin-top: 20px;
+    text-align: center;
+}
+.menu div{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.menu div:last-child{
+    margin-bottom: 40px;
+}
 .nav a {
     margin: 20px;
     text-decoration: none;
