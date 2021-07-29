@@ -1,8 +1,25 @@
-img.avatar {
+.avatar {
     width: 100px;
+    height: 100px;
+    margin-left: 5px;
   }
 img.bg {
     width: 100%;
     height: 100px;
     opacity: 0.8;
+}
+.profileContent{
+    margin: 10px;
+}
+.profileInfo{
+    display:flex;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 5px
+}
+
+.info{
+    flex-direction: column;
+    margin-left: 40px;
+    line-height: 10px
 }

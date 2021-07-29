@@ -1,0 +1,61 @@
+.myPosts {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.createPost {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.createPost button {
+    margin: 20px 20px 20px 0;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    padding: 3px 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, .3);
+    background-image: -webkit-linear-gradient(#52A8E8, #377AD0);
+    /*background-image:-moz-linear-gradient(0% 100% 90deg,#377AD0, #52A8E8);*/
+    background-image: -o-linear-gradient(rgb(82, 168, 232), rgb(55, 122, 208));
+    background-color: #52A8E8;
+    -moz-border-radius: 23px;
+    -webkit-border-radius: 23px;
+    border-radius: 23px;
+    border: 1px solid #20559A;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .5), inset 0 1px 0 rgba(255, 255, 255, .3);
+}
+
+.createPost button:hover, .createPost button:focus {
+    background-image: -webkit-linear-gradient(#54A1D8, #1967CA);
+    background-image: -moz-linear-gradient(0% 100% 90deg, #1967CA, #54A1D8);
+    background-image: -o-linear-gradient(rgb(84, 161, 216), rgb(25, 103, 202));
+    background-color: #52A8E8;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .6), inset 0 1px 0 rgba(255, 255, 255, .3);
+}
+
+.createPost button:active {
+    background-color: #2D7CD1;
+    box-shadow: 0 1px 1px rgba(255, 255, 255, .5), inset 0 2px 5px rgba(0, 0, 100, .5);
+}
+
+textarea {
+    width: 300px;
+    height: 100px;
+}
+
+.newPost{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+h3{
+    margin-left: 10px;
+}
+.posts{
+    margin:10px;
+}
