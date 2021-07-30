@@ -1,0 +1,18 @@
+.profileInfo {
+    display: flex;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 5px
+}
+
+.info {
+    flex-direction: column;
+    margin-left: 40px;
+    line-height: 10px
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    margin-left: 5px;
+}
