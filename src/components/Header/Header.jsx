@@ -4,7 +4,7 @@ import styles from './Header.module.css'
 const Header = () => {
   return (
     <header className={styles.header}>
-      <img src="logo.png" alt="logo"></img>
+      <img src="/images/logo.png" alt="logo"></img>
       <p>Apple Helper</p>
     </header>
   );

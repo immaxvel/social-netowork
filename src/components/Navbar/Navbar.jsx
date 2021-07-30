@@ -10,19 +10,19 @@ const Navbar = () => {
                     <NavLink activeClassName={styles.active} to="/profile">Profile</NavLink>
                 </div>
                 <div>
-                    <NavLink activeClassName={styles.active} to="/dialogs">Messages</NavLink>
+                    <NavLink activeClassName={styles.active} to="/dialogs">Dialogs</NavLink>
                 </div>
                 <div>
-                    <a to="#">Friends</a>
+                    <NavLink activeClassName={styles.active} to="/Friends">Friends</NavLink>
                 </div>
                 <div>
-                    <a href="#">Music</a>
+                    <NavLink activeClassName={styles.active} to="/Music">Music</NavLink>
                 </div>
                 <div>
-                    <a href="#">News</a>
+                    <NavLink activeClassName={styles.active} to="/News">News</NavLink>
                 </div>
                 <div>
-                    <a href="#">Settings</a>
+                    <NavLink activeClassName={styles.active} to="/Settings">Settings</NavLink>
                 </div>
             </div>
         </nav>

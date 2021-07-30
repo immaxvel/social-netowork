@@ -3,15 +3,14 @@ import MyPosts from "./MyPosts/MyPosts";
 import styles from './Profile.module.css'
 import ProfileInfo from "./ProfileInfo/ProfileInfo";
 
-const Profile = () => {
+const Profile = (props) => {
+
     return (
         <div>
-            <div>
-                <img className={styles.bg} src="bg.jpg" alt="bg"/>
-            </div>
+
             <ProfileInfo/>
             <div className={styles.profileContent}>
-                <MyPosts/>
+                <MyPosts posts={props.posts}/>
             </div>
 
         </div>
