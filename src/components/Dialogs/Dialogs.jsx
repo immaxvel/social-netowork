@@ -29,9 +29,7 @@ const Dialogs = (props) => {
                         <button onClick={addMessage}>Send Message</button>
                     </div>
                 </div>
-
             </div>
-
         </div>
 
     )
