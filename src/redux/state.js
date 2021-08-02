@@ -25,4 +25,15 @@ let state = {
 
 }
 
+export let addPost = (post) => {
+    let newPost = {
+        id: 5,
+        post: post,
+        likes: 0,
+    };
+   state.profilePage.posts.push(newPost);
+}
+
+
+
 export default state;

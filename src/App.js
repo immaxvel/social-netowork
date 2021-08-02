@@ -5,6 +5,8 @@ import Profile from "./components/Profile/Profile";
 import Dialogs from "./components/Dialogs/Dialogs";
 import BG from "./components/BG/BG";
 import {Route} from "react-router-dom";
+import {addPost} from "./redux/state";
+
 
 const App = (props) => {
     return (
@@ -18,7 +20,7 @@ const App = (props) => {
                         state={props.state.dialogsPage}/>}/>
                 <Route path="/profile" render={() =>
                     <Profile
-                        state={props.state.profilePage.posts}/>}/>
+                        state={props.state.profilePage.posts} addPost={props.addPost}/>}/>
             </div>
         </div>
     );
