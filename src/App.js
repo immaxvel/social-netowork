@@ -5,7 +5,6 @@ import Profile from "./components/Profile/Profile";
 import Dialogs from "./components/Dialogs/Dialogs";
 import BG from "./components/BG/BG";
 import {Route} from "react-router-dom";
-import {addPost} from "./redux/state";
 
 
 const App = (props) => {
@@ -17,10 +16,19 @@ const App = (props) => {
                 <BG/>
                 <Route path="/dialogs" render={() =>
                     <Dialogs
-                        state={props.state.dialogsPage}/>}/>
+                        state={props.state.dialogsPage}
+                        updateNewMessageText={props.updateNewMessageText}
+                        addMessage={props.addMessage}
+
+                    />}/>
                 <Route path="/profile" render={() =>
                     <Profile
-                        state={props.state.profilePage.posts} addPost={props.addPost}/>}/>
+                        profilePage={props.state.profilePage}
+                        addPost={props.addPost}
+                        updateNewPostText={props.updateNewPostText}
+                    />}
+
+                />
             </div>
         </div>
     );
