@@ -26,6 +26,7 @@ const MyPosts = (props) => {
                 <h2>My Posts</h2>
                 <div className={styles.createPost}>
                     <textarea ref={newPostElement}
+                              placeholder={"Enter your post text...."}
                               onChange={onPostChange}
                               value={props.newPostText}/>
                     <button onClick={ onAddPost }>Add Post</button>
