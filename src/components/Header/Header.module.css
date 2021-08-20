@@ -19,3 +19,14 @@
   height:20px;
   margin-top: 15px;
 }
+.loginBlock{
+  float: right;
+  margin-top: 10px;
+}
+.loginBlock a{
+  color: black;
+  margin-right: 20px;
+  margin-top: 20px;
+  font-size:20px;
+  text-decoration: none;
+}

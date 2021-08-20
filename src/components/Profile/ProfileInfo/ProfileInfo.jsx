@@ -8,7 +8,7 @@ const ProfileInfo = (props) => {
 
     return (
         <div className={styles.profileInfo}>
-            <img className={styles.avatar} src={props.profile.photos.small} alt="avatar"/>
+            <img className={styles.avatar} src={props.profile.photos.large} alt="avatar"/>
             <div className={styles.info}>
                 <h2>{props.profile.fullName}</h2>
                 <p>{props.profile.lookingForAJob}</p>
