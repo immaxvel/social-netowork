@@ -35,27 +35,14 @@ const Users = (props) => {
                         </div>
                         <div className={styles.follButton}>
                             {user.followed ?
-                                <button disabled={props.followingInProgress.some(id => id === user.id)} onClick={() => {
-                                    props.toggleFollowingProgress(true, user.id);
-                                    usersAPI.unfollow(user.id)
-                                        .then(response => {
-                                            if (response.data.resultCode === 0) {
-                                                props.unfollow(user.id)
-                                            }
-                                            props.toggleFollowingProgress(false, user.id);
-                                        });
+                                <button disabled={props.followingInProgress
+                                    .some(id => id === user.id)} onClick={() => {
+                                        props.unfollow(user.id)
                                 }}>UnFollow</button>
                                 :
-                                <button disabled={props.followingInProgress.some(id => id === user.id)} onClick={() => {
-                                    props.toggleFollowingProgress(true, user.id);
-                                    usersAPI.follow(user.id)
-                                        .then(response => {
-                                            if (response.data.resultCode === 0) {
-                                                props.follow(user.id)
-                                            }
-                                            props.toggleFollowingProgress(false, user.id);
-                                        });
-
+                                <button disabled={props.followingInProgress
+                                    .some(id => id === user.id)} onClick={() => {
+                                        props.follow(user.id)
                                 }}>Follow</button>}
 
                         </div>
