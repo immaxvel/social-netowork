@@ -16,3 +16,6 @@
     height: 100px;
     margin-left: 5px;
 }
+.status input{
+    width: 200px;
+}
