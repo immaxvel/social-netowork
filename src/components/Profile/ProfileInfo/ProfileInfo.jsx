@@ -1,6 +1,7 @@
 import styles from "../ProfileInfo/ProfileInfo.module.css";
 import Preloader from "../../Common/Preloader/Preloader";
 import ProfileStatus from "./ProfileStatus"
+import userPhoto from '../../../assets/images/avatar.jpg'
 
 const ProfileInfo = (props) => {
     if(!props.profile){
@@ -9,7 +10,7 @@ const ProfileInfo = (props) => {
 
     return (
         <div className={styles.profileInfo}>
-            <img className={styles.avatar} src={props.profile.photos.large} alt="avatar"/>
+            <img className={styles.avatar} src={props.profile.photos.large != null ? props.profile.photos.small : userPhoto} alt="avatar"/>
             <div className={styles.info}>
                 <h2>{props.profile.fullName}</h2>
                 <ProfileStatus status={props.status} updateStatus={props.updateStatus}/>
