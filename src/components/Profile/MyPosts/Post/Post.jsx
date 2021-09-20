@@ -6,7 +6,7 @@ import userAvatar from "./../../../../assets/images/avatar.jpg"
 const Post = (props) => {
     return (
         <div className={styles.item}>
-            <img className="post_avatar" src={userAvatar}></img>
+            <img className="post_avatar" src={userAvatar} alt={'avatar'}></img>
             {props.message}
             <div>
                 <span>Likes: </span>{props.likes}

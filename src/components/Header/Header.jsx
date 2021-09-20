@@ -8,8 +8,9 @@ const Header = (props) => {
       <img src="/images/logo.png" alt="logo"></img>
       <p>Apple Helper</p>
         <div className={styles.loginBlock}>
-            {props.isAuth ? props.login :
-                <NavLink to={'/login'}>Login</NavLink>}
+            {props.isAuth
+                ? <div>{props.login} <button onClick={props.logout}>Log Out</button></div> :
+                <NavLink to={'/login'}><button>Login</button></NavLink>}
         </div>
     </header>
   );
