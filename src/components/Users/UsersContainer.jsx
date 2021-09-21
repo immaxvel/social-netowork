@@ -4,7 +4,6 @@ import {setCurrentPage,toggleFollowingProgress, getUsers, follow, unfollow
 import React from "react";
 import Users from "./Users";
 import Preloader from "../Common/Preloader/Preloader.jsx";
-import {withAuthRedirect} from "../../hoc/WithAuthRedirect";
 import {compose} from "redux";
 
 
@@ -51,8 +50,7 @@ export default compose(
             setCurrentPage,
             toggleFollowingProgress,
             getUsers,
-        }),
-    withAuthRedirect
+        })
 )(UsersContainer);
 
 
