@@ -79,19 +79,3 @@
 
 }
 
-.selectedPage{
-    font-weight: bold;
-    cursor: pointer;
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 20px;
-}
-.selectedPage:hover{
-    cursor:pointer;
-}
-.pageDot{
-    display: flex;
-    flex-direction: row;
-    margin-left:20px;
-    cursor: pointer;
-}
